@@ -1,0 +1,27 @@
+.server{
+  margin: 10px 10px;
+}
+.card {
+  text-align: center;
+  img {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0px;
+  }
+}
+
+.card-body {
+  padding: 10px;
+  p {
+    font-size: 14px;
+  }
+}
+
+.selected {
+  background: rgba(250, 29, 0, .1);
+  -webkit-box-shadow: inset 0px 0px 5px 0px rgba(250, 29, 0, 1);
+  -moz-box-shadow: inset 0px 0px 5px 0px rgba(250, 29, 0, 1);
+  box-shadow: inset 0px 0px 5px 0px rgba(250, 29, 0, 1);
+}
+

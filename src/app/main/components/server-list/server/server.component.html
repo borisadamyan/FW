@@ -1,0 +1,12 @@
+<div class="server">
+  <div [ngClass]="serverSelect?'selected':''" class="card" style="width: 11rem">
+    <img src='../../../../../assets/images/server.png'/>
+    <div class="card-body">
+      <h6 class="card-title">{{server.name}}</h6>
+      <p class="card-text">{{server.description}}</p>
+      <a *ngIf="!serverSelect" (click)="addServer($event,server)" href="javascript:;" class="btn btn-primary">Use</a>
+      <a *ngIf="serverSelect" (click)="removeServer($event, server)" href="javascript:;"
+         class="btn btn-danger">Remove</a>
+    </div>
+  </div>
+</div>

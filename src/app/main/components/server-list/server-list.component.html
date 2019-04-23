@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          <div class="servers-list">
+            <app-server
+                    *ngFor="let server of servers"
+                    [server]="server"
+            ></app-server>
+          </div>
+          <button class="btn btn-success float-right runBtn " (click)="runCmd()" >Run Command</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
